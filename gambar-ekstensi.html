@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uji Kecepatan Loading Gambar (JPG, PNG, WEBP)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      .image-container {
+        margin: 20px 0;
+      }
+      img {
+        width: 80%; /* Membuat gambar responsif */
+        max-width: 600px;
+        border: 2px solid #ccc;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uji Perbedaan Kecepatan Loading Gambar (JPG, PNG, WEBP)</h1>
+
+    <div class="image-container">
+      <h2>Gambar JPG (Ukuran File Lebih Besar)</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Parliament_Hill_in_Ottawa_%28crop%29.jpg/1920px-Parliament_Hill_in_Ottawa_%28crop%29.jpg"
+        alt="Gambar JPG"
+      />
+      <p>
+        Gambar ini berformat JPG dan memiliki ukuran file yang relatif besar.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <h2>Gambar PNG (Ukuran File Lebih Besar dan Tanpa Kompresi)</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/af/PNG_transparency_demonstration_1.png"
+        alt="Gambar PNG"
+      />
+      <p>
+        Gambar ini berformat PNG dan cenderung lebih besar karena tanpa kompresi
+        lossless.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <h2>Gambar WEBP (Ukuran File Lebih Kecil dan Terkompresi)</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Windows_11_logo_2021.png"
+        alt="Gambar WEBP"
+      />
+      <p>
+        Gambar ini berformat WEBP, yang menawarkan kompresi lebih baik dan
+        ukuran file lebih kecil.
+      </p>
+    </div>
+
+    <footer>
+      <p>
+        Perbandingan ini hanya untuk menguji bagaimana format gambar yang
+        berbeda mempengaruhi kecepatan loading halaman.
+      </p>
+    </footer>
+  </body>
+</html>
