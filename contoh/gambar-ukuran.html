@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uji Kecepatan Loading Gambar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      .image-container {
+        margin: 20px 0;
+      }
+      img {
+        width: 80%; /* Membuat gambar responsif */
+        max-width: 600px;
+        border: 2px solid #ccc;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uji Perbedaan Kecepatan Loading Gambar</h1>
+
+    <div class="image-container">
+      <h2>Gambar Besar (Ukuran File Besar)</h2>
+      <img src="gambar/asli.jpg" alt="Gambar Besar" />
+      <p>
+        Gambar ini memiliki ukuran file yang lebih besar dan akan memakan waktu
+        lebih lama untuk dimuat.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <h2>Gambar Kecil (Ukuran File Kecil)</h2>
+      <img src="gambar/kompres.jpg" alt="Gambar Kecil" />
+      <p>
+        Gambar ini lebih kecil dan akan dimuat lebih cepat dibandingkan gambar
+        besar.
+      </p>
+    </div>
+
+    <footer>
+      <p>
+        Perbandingan ini hanya untuk menguji bagaimana gambar dengan ukuran file
+        yang berbeda mempengaruhi kecepatan loading halaman.
+      </p>
+    </footer>
+  </body>
+</html>
